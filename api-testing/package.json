@@ -2,10 +2,16 @@
   "name": "api-testing",
   "version": "1.0.0",
   "description": "api testing",
+  "directories": {
+	"test":"tests"
+  },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prod-api-test": "newman run test/JP-USERS.postman_collection.json"
   },
   "author": "",
+  "dependencies": {
+	"newman" : "^4.5.4"
+  },
   "license": "ISC"
 }
